@@ -14,13 +14,14 @@ public class Elfo extends Heroe {
     @Override
     public void atacar(Luchador enemigo) {
         int danio = Heroe.generarAtaque();
-        final int rabia = MotorJuego.generarNumAleatorio(0, 10);
-
+        int rabia = MotorJuego.generarNumAleatorio(0, 10);
+        
         if (enemigo instanceof Orco) {
             danio += rabia;
-            danio -= enemigo.getArmadura();
-
+            
             if (danio > enemigo.getArmadura()) {
+                System.out.print(" ----------- ODIO A LOS ORCOS (+RABIA) ---------->");
+                danio -= enemigo.getArmadura();
                 enemigo.setVida(danio);
             }
         } else {
@@ -29,6 +30,7 @@ public class Elfo extends Heroe {
                 enemigo.setVida(danio);
             }
         }
+        System.out.println();
     }
 
 }

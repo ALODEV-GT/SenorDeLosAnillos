@@ -16,6 +16,7 @@ public abstract class Heroe extends Luchador {
             danio -= enemigo.getArmadura();
             enemigo.setVida(danio);
         }
+        System.out.println();
     }
 
     public static int generarAtaque() {

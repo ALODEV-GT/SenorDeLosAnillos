@@ -16,10 +16,11 @@ public class Orco extends Bestia {
         int armaduraEnemigo = (int) (enemigo.getArmadura() * (1 - REDUCCION_ARMADURA));
 
         if (danio > armaduraEnemigo) {
+            System.out.print("-------- REDUCI TU ARMADURA -------------------->");
             danio -= armaduraEnemigo;
             enemigo.setVida(danio);
         }
-
+        System.out.println();
     }
 
 }

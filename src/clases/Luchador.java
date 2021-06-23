@@ -46,4 +46,8 @@ public abstract class Luchador {
     private void establecerArmadura() {
         this.armadura = MotorJuego.generarNumAleatorio(50, 70);
     }
+
+    public String toString() {
+        return this.nombre + "  vida(" + this.vida + ")";
+    }
 }
