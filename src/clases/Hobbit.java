@@ -18,7 +18,7 @@ public class Hobbit extends Heroe {
             danio -= miedo;
 
             if (danio > enemigo.getArmadura()) {
-                System.out.print(" ----------- LE TEMO A LOS TRASGOS (-MIEDO) ---------->");
+                System.out.print("\u001B[35m ------- LE TEMO A LOS TRASGOS (-MIEDO) ------>\u001B[0m");
                 danio -= enemigo.getArmadura();
                 enemigo.setVida(danio - miedo);
             }

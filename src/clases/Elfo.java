@@ -20,7 +20,7 @@ public class Elfo extends Heroe {
             danio += rabia;
             
             if (danio > enemigo.getArmadura()) {
-                System.out.print(" ----------- ODIO A LOS ORCOS (+RABIA) ---------->");
+                System.out.print(" \u001B[34m------- ODIO A LOS ORCOS (+RABIA) ------\u001B[0m>");
                 danio -= enemigo.getArmadura();
                 enemigo.setVida(danio);
             }

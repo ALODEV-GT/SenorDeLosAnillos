@@ -33,7 +33,7 @@ public class MotorJuego {
         if (ganaronBestias) {
             System.out.println("\n\n-X-X-X-X- GANARON LAS BESTIAS -X-X-X-X-");
         } else {
-            System.out.println("\n\n~#~#~#~#~ GANAORN LOS HEROES ~#~#~#~#~");
+            System.out.println("\n\n~#~#~#~#~ GANARON LOS HEROES ~#~#~#~#~");
         }
 
         System.out.println("\nSobrevivientes:");
@@ -65,7 +65,7 @@ public class MotorJuego {
         for (int i = 0; i < ejercito.length; i++) {
             if (ejercito[i] != null) {
                 if (!ejercito[i].estaVivo()) {
-                    System.out.println("☠☠☠ Ha muerto " + ejercito[i].getNombre() + " ☠☠☠");
+                    System.out.println("\u001B[41m☠☠☠ Ha muerto " + ejercito[i].getNombre() + " ☠☠☠\u001B[0m");
                     ejercito[i] = null;
                 }
             }
